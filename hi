@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="StylesForHoyoKnights.css">
+
+ <!--Code written by Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Blaka&family=Finger+Paint&family=Jersey+10&family=New+Rocker&family=Pacifico&family=Pixelify+Sans:wght@400..700&family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+  <center><font size="4px"><header><h1><span class= "Mydei-is-the-best-character">Hoyo Knights!</span></h1></header>
+
+<body style="background-color: #000000;">
+
+ <font color="#a9def9"> <nav>
+
+<a href="HKHome.html" style="color:#e4c1f9">Home</a>
+<a href="HKEvents.html" style="color:#e4c1f9">Events</a>
+<a href="HKDirectory.html" style="color:#e4c1f9">Directory</a>
+<a href="HKCollab.html" style="color:#e4c1f9">Collaborators</a>
+</nav>
+  <p> Welcome to Hoyo Knight's official website!</p>
+
+  <h2><span class="Anaxa-is-the-second-best-character">About Us!</span></h2>
+<p>We are a Gacha game based club here at UCF.</p>
+  <p>We are a realtively new club, being established this year, so we don't have too many members just yet.</p>
+
+   <br>
+  <h2><span class="Anaxa-is-the-second-best-character">Why Join?</span></h2>
+  <p>Do you like Stories? Adventure? Characters? Characters that look and act so cool you may or may not spend your entire paycheck in order to get them as a playable character in your inventory?</p>
+
+  <p>Well, Look no further! Hoyo Knights is the club for you!</p>
+
+  <p>Our primary focus are on games from the Hoyoverse such as Genshin Impact, Honkai: Star Rail (our current president's favorite), and Zenless Zone Zero!</p>
+  <br>
+  <p>BUT-</p>
+  <br>
+  <p>Hoyoverse isn't our only focus. We Disscus, play, and collaborate on other gacha based games. We love them all!</p>
+<br>
+  <h2><span class="Anaxa-is-the-second-best-character">Why Join?</span></h2>
+<p>Group Gaming Sessions | Group Discussions | Character Builds | Play Throughs | Watch Alongs | Social Events | and More!</p>
+
+<p>Hang out with other students that enjoy playing gacha games! Play co-op or have challenges! Watch along to gacha related content or events! Teach or be taught how to build specific characters or teams in your favorite games! Join us outside of UCF for social events such as picnics, karaoke, lunch/dinner, and more!</p>
+
+<img src="../images/Sampo1.webp" alt="Imagine A super adorable image of Sampo from my absolute favorite game Honkai: Star Rail looking adorable.">
+<h2><span class="Anaxa-is-the-second-best-character">Join Us!</span></h2>
+<p>Any of this sound interesting to you? Yes? Then join our Discord Server and sign up on Knights Connect!</p>
+<a href="https://discord.gg/gDtH53Kp4e" style="color:#e4c1f9 ;">Discord</a>
+<br>
+<a href="Comming soon" style="color:#e4c1f9">This Link is Comming Soon!</a></font>
+</body>
+<br>
+<br><br>
+<br><br>
+<br>
+<footer p><font color="#e4c1f9">  President: Mason Mitchell | Vice President: Justin Abraham | Secretary: Jayce Ambrocio | A University of Central Florida club | We'll see you tomorrow! | Hotel? Trivago</font></p>
+</footer></font></center>
+
+</html>
