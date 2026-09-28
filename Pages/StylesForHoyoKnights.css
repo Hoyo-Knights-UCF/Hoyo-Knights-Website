@@ -52,7 +52,12 @@ nav a {
   margin: 5px;
 }
 
-.OWO {
-	float: right;
-  margin-right: 10px;
+img {
+  max-width: 100%; 
+  height: auto;    
+}
+
+.image-container {
+  max-width: 800px; 
+  width: 100%;
 }
