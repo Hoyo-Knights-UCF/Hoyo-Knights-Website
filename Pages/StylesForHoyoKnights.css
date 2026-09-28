@@ -57,16 +57,13 @@ img {
   height: auto;    
 }
 
+.image-container {
+  max-width: 800px; 
+  width: 100%;
+}
 
 .heart-list li::marker {
   content: "\2665";
   color: #f2b5d4;
   font-size: 1.6em;
-}
-
-
-
-.image-container {
-  max-width: 800px; 
-  width: 100%;
 }
