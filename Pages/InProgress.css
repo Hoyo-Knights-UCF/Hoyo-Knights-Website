@@ -1,0 +1,38 @@
+
+.Hello{
+    font-family: "Bagel Fat One", system-ui;
+    color:#e4c1f9;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.Main{
+    font-family: "Bagel Fat One", system-ui;
+    color: #e4c1f9;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 100px;
+}
+
+.Images{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.Endmin{
+    display: block;
+    margin: auto;
+}
+
+.Kyaskadi{
+    display: block;
+    margin: auto;
+}
+
+.Tang{
+    display: block;
+    margin: auto;
+}
