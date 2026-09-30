@@ -14,12 +14,21 @@
     padding-top: 100px;
 }
 
+
 .Images{
     justify-content: space-around;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .Images {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+ 100px;
 }
 
 .Endmin{
