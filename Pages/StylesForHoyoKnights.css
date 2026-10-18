@@ -137,8 +137,10 @@ label {
         overflow-wrap: normal;
         word-break: normal;
     }
+   /* Your other mobile styles go here */
 
-    /* Keep footer text small */
+
+    /* Keep footer small ONLY on mobile */
     footer,
     footer p,
     footer font {
@@ -146,5 +148,4 @@ label {
         line-height: 1.4;
     }
 
-}
 }
