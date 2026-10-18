@@ -136,6 +136,7 @@ label {
     /* Main title */
     h1 .Mydei-is-the-best-character {
         font-size: 60px !important;
+       flex-wrap: wrap;
     }
 
     /* Section headings */
