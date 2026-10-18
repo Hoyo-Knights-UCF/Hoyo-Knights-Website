@@ -129,17 +129,8 @@ label {
 
 
 
-/*This is for the mobile phone/tablet layoy*/
-
-    /* Keep the main title from breaking words */
-    h1 .Mydei-is-the-best-character {
-        font-size: 52px !important;
-        overflow-wrap: normal;
-        word-break: normal;
-    }
-   /* Your other mobile styles go here */
-
-
+ /* Your other mobile styles go here */
+@media screen and (max-width: 767px) {
     /* Keep footer small ONLY on mobile */
     footer,
     footer p,
