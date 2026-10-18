@@ -126,8 +126,14 @@ label {
   color: #e4c1f9;
 }
 
-.prompt{
-  color: #a9def9;
+form .prompt,
+form .prompt label,
+form p {
+    color: #a9def9;
+
+  form input::placeholder {
+    color: #f2b5d4;
+    opacity: 1;
 }
 
 
