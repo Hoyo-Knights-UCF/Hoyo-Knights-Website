@@ -132,10 +132,25 @@ label {
 /*This is for the mobile phone/tablet layoy*/
 
 
+@media screen and (max-width: 767px) {
 
-@media (max-width: 767px) {
+    /* Main title */
+    h1 .Mydei-is-the-best-character {
+        font-size: 60px !important;
+    }
 
-    /* Keep navigation buttons together and let them wrap */
+    /* Section headings */
+    h2 .Anaxa-is-the-second-best-character {
+        font-size: 40px !important;
+    }
+
+    /* Regular page text */
+    body p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    /* Navigation buttons wrap onto another row */
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -143,25 +158,7 @@ label {
     }
 
     nav a {
-        display: inline-block;
-        padding: 10px 20px;
-        margin: 5px;
-    }
-
-    /* Big headings that scale with the screen */
-    .Mydei-is-the-best-character {
-        font-size: clamp(50px, 10vw, 100px);
-        overflow-wrap: anywhere;
-    }
-
-    .Anaxa-is-the-second-best-character {
-        font-size: clamp(35px, 7vw, 50px);
-        overflow-wrap: anywhere;
-    }
-
-    /* Let regular text wrap naturally */
-    body {
-        overflow-wrap: break-word;
+        font-size: 18px;
     }
 
     /* Keep images inside the screen */
@@ -169,18 +166,6 @@ label {
         max-width: 100%;
         height: auto;
     }
-
-    /* One event card per row */
-    .events {
-        grid-template-columns: 1fr;
-        padding: 15px;
-    }
-
-    /* Keep the form inside the screen */
-    form {
-        width: 100%;
-        max-width: 500px;
-        box-sizing: border-box;
-        margin: 20px auto;
-    }
 }
+
+\
