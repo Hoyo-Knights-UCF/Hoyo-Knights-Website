@@ -52,18 +52,172 @@ nav a {
   margin: 5px;
 }
 
+.heart-list li::marker {
+  content: "\2665";
+  color: #f2b5d4;
+  font-size: 1.6em;
+}
+
 img {
   max-width: 100%; 
   height: auto;    
 }
+
 
 .image-container {
   max-width: 800px; 
   width: 100%;
 }
 
-.heart-list li::marker {
-  content: "\2665";
-  color: #f2b5d4;
-  font-size: 1.6em;
+
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #000000;
+  border-color: #a9def9;
+  border-radius: 20px;
+  color: #A3C4F5;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+button {
+ background-color: #f2b5d4;
+  color: #5A2576;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+ accent-color: #f2b5d4;
+  display: inline-block;
+  width: auto;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+form select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 8px 0 20px;
+    background-color: #000000;
+    color: #e4c1f9;
+    border: 2px solid #A3C4F5;
+    border-radius: 8px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #f2b5d4;
+  outline-offset: 2px;
+}
+
+label {
+  color: #a9def9;
+}
+
+
+
+
+/*This is for the mobile phone/tablet layoy*/
+
+
+/* =================================
+   MOBILE-FRIENDLY STYLES
+   ================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* Keep content from touching the screen edges */
+    body {
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    /* Make the main heading fit on phones */
+    .Mydei-is-the-best-character {
+        font-size: clamp(40px, 10vw, 65px);
+    }
+
+    .Anaxa-is-the-second-best-character {
+        font-size: clamp(28px, 7vw, 40px);
+    }
+
+    /* Navigation links can wrap onto multiple lines */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        margin: 2px;
+        font-size: 14px;
+    }
+
+    /* Make images fit the phone screen */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Stack event cards into one column */
+    .events {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .event-card img {
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    /* Registration forms fit the screen */
+    form {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    form input:not([type="radio"]):not([type="checkbox"]),
+    form select {
+        max-width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    /* Make buttons easier to tap */
+    button {
+        min-height: 44px;
+    }
+
+    /* Prevent long links from stretching the page */
+    a {
+        overflow-wrap: anywhere;
+    }
 }
