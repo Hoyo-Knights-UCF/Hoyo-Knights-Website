@@ -132,92 +132,48 @@ label {
 /*This is for the mobile phone/tablet layoy*/
 
 
-/* =================================
-   MOBILE-FRIENDLY STYLES
-   ================================= */
+/* Mobile styles */
+@media (max-width: 767px) {
 
-@media screen and (max-width: 600px) {
-
-    /* Keep content from touching the screen edges */
-    body {
-        margin: 0;
-        padding: 10px;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-    }
-
-    /* Make the main heading fit on phones */
     .Mydei-is-the-best-character {
-        font-size: clamp(40px, 10vw, 65px);
+        font-size: 50px;
     }
 
     .Anaxa-is-the-second-best-character {
-        font-size: clamp(28px, 7vw, 40px);
+        font-size: 30px;
     }
 
-    /* Navigation links can wrap onto multiple lines */
     nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 5px;
     }
 
     nav a {
         padding: 8px 12px;
-        margin: 2px;
-        font-size: 14px;
     }
 
-    /* Make images fit the phone screen */
     img {
         max-width: 100%;
         height: auto;
     }
 
-    .image-container {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    /* Stack event cards into one column */
     .events {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 15px 0;
-        width: 100%;
-        box-sizing: border-box;
+        padding: 15px;
     }
 
-    .event-card img {
-        height: auto;
-        max-height: 250px;
-        object-fit: cover;
-    }
-
-    /* Registration forms fit the screen */
     form {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 500px;
         margin: 20px auto;
         padding: 20px;
         box-sizing: border-box;
     }
 
-    form input:not([type="radio"]):not([type="checkbox"]),
-    form select {
+    input:not([type="radio"]):not([type="checkbox"]),
+    select {
         max-width: 100%;
         box-sizing: border-box;
-        font-size: 16px;
-    }
-
-    /* Make buttons easier to tap */
-    button {
-        min-height: 44px;
-    }
-
-    /* Prevent long links from stretching the page */
-    a {
-        overflow-wrap: anywhere;
     }
 }
