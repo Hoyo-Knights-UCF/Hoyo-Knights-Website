@@ -72,7 +72,7 @@ img {
 
 
 .sampo-float {
-    float: left;
+    float: right;
     width: 180px;
     max-width: 40%;
     height: auto;
