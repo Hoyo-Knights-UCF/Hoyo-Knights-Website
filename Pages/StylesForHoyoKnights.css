@@ -69,18 +69,13 @@ img {
   width: 100%;
 }
 
-
-
-.sampo-float {
-    float: right;
-    width: 180px;
-    max-width: 40%;
-    height: auto;
-    margin: 0 15px 10px 0;
-}
-
 .character-disclaimer {
-    clear: both;
+  font-size: 9px;
+  opacity: 0.5;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 
