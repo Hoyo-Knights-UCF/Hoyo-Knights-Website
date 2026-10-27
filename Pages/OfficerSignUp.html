@@ -52,35 +52,65 @@
 
 
 <script>
-const scriptURL = "https://script.google.com/macros/s/AKfycbxbACh9FD3qjgnrhDehZ9ajUaoX6MX9bsAQ4PXOk1jAUUXfDlP31ABDgL-XJV0-5FAjCA/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyVKQjOeaDTCjz2-EHiBpInfGVmgb0YEH2lv2TgGoqr5obZwYK7MdSAEpcHszpAxvhVXw/exec";
 const form = document.getElementById("OfficerSignUp");
-  
-console.log("Hoyo Knights form script loaded!", form);
+const submitButton = form.querySelector(
+    'button[type="submit"]'
+);
 
-form.addEventListener("submit", async function(event) {
+form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const formData = new FormData(form);
-    const data = new URLSearchParams();
+    const email = form.elements.nid.value
+        .trim()
+        .toLowerCase();
 
-    for (const [key, value] of formData.entries()) {
-        data.append(key, value);
-    }
+    submitButton.disabled = true;
 
-    try {
-        await fetch(scriptURL, {
-            method: "POST",
-            body: data,
-            mode: "no-cors"
-        });
+    const checkScript = document.createElement("script");
 
-        alert("Sampo Koski: 'Thanks for submitting an officer form! Your old pal, Sampo will give you his full support!...For a price.'");
-        form.reset();
+    window.handleTreasurerCheck = async function(result) {
+        checkScript.remove();
+        delete window.handleTreasurerCheck;
 
-    } catch (error) {
-        alert("Something went wrong. Please try again.");
-        console.error(error);
-    }
+        if (result.alreadySubmitted) {
+            alert("Sampo Koski:Sampo Koski: You already submitted a form there, friend. Are you trying to pull something? I'll keep my mouth shut for a small fee.~");
+            submitButton.disabled = false;
+            return;
+        }
+
+        try {
+            await fetch(scriptURL, {
+                method: "POST",
+                body: new FormData(form),
+                mode: "no-cors"
+            });
+
+            alert("Sampo Koski: Thanks for submitting an officer form! Your old pal, Sampo will give you his full support!...For a price.~");
+            form.reset();
+
+        } catch (error) {
+            alert("Something went wrong. Please try again.");
+            console.error(error);
+
+        } finally {
+            submitButton.disabled = false;
+        }
+    };
+
+    checkScript.onerror = function() {
+        checkScript.remove();
+        delete window.handleTreasurerCheck;
+        submitButton.disabled = false;
+
+        alert("Couldn't check your submission. Please try again.");
+    };
+
+    checkScript.src = scriptURL
+        + "?email=" + encodeURIComponent(email)
+        + "&callback=handleTreasurerCheck";
+
+    document.body.appendChild(checkScript);
 });
 </script>
 </body>
