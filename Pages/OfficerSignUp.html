@@ -74,7 +74,7 @@ form.addEventListener("submit", function(event) {
         delete window.handleTreasurerCheck;
 
         if (result.alreadySubmitted) {
-            alert("Sampo Koski:Sampo Koski: You already submitted a form there, friend. Are you trying to pull something? I'll keep my mouth shut for a small fee.~");
+            alert("Sampo Koski: You already submitted a form there, friend. Are you trying to pull something? I'll keep my mouth shut . . . for a fee.~");
             submitButton.disabled = false;
             return;
         }
@@ -86,7 +86,7 @@ form.addEventListener("submit", function(event) {
                 mode: "no-cors"
             });
 
-            alert("Sampo Koski: Thanks for submitting an officer form! Your old pal, Sampo will give you his full support!...For a price.~");
+            alert("Sampo Koski: Thanks for submitting an officer form! Your old pal, Sampo will give you his full support! . . . For a price.~");
             form.reset();
 
         } catch (error) {
