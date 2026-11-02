@@ -21,8 +21,8 @@
 
 <form id="VoteForm">
 
-<div class="prompt"><label for="nid">UCF email</label></div>
-<input type="email" id="VoterEmail" name="Email" required placeholder="nid@ucf.edu" pattern=".+@ucf\.edu" title="Please enter your UCF Email Address.">
+<div class="prompt"><label for="email">UCF email</label></div>
+<input type="email" id="email" name="email" required placeholder="nid@ucf.edu" pattern=".+@ucf\.edu" title="Please enter your UCF Email Address.">
 
 
   
@@ -46,7 +46,7 @@
 
 
 <script>
-const scriptURL = "";
+const scriptURL = "https://script.google.com/macros/s/AKfycbxlUuj-K2OIfEkDNS3N8Gfkq_J-Jbr5Wwj0toZ7EVl9Sc1LAMjMs9qr5VERbSPSCRCIMQ/exec";
 const form = document.getElementById("VoteForm");
 const submitButton = form.querySelector(
     'button[type="submit"]'
@@ -55,7 +55,7 @@ const submitButton = form.querySelector(
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const email = form.elements.nid.value
+    const email = form.elements.email.value
         .trim()
         .toLowerCase();
 
@@ -63,10 +63,9 @@ form.addEventListener("submit", function(event) {
 
     const checkScript = document.createElement("script");
 
-    window.handleTreasurerCheck = async function(result) {
+   window.handleTreasurerVote = async function(result) {
         checkScript.remove();
-        delete window.handleTreasurerCheck;
-
+delete window.handleTreasurerVote;
         if (result.alreadySubmitted) {
             alert("Sampo Koski: You already voted, friend. What are you trying to pull here? I'll keep my mouth shut . . . for a small fee.~");
             submitButton.disabled = false;
@@ -79,7 +78,7 @@ form.addEventListener("submit", function(event) {
 
             await fetch(scriptURL, {
                 method: "POST",
-                body: new FormData(form),
+                body: formData,
                 mode: "no-cors"
             });
 
@@ -97,7 +96,7 @@ form.addEventListener("submit", function(event) {
 
     checkScript.onerror = function() {
         checkScript.remove();
-        delete window.handleTreasurerCheck;
+        delete window.handleTreasurerVote;
         submitButton.disabled = false;
 
         alert("Couldn't check your submission. Please try again.");
@@ -105,7 +104,7 @@ form.addEventListener("submit", function(event) {
 
     checkScript.src = scriptURL
         + "?email=" + encodeURIComponent(email)
-        + "&callback=handleTreasurerCheck";
+        + "&callback=handleTreasurerVote";
 
     document.body.appendChild(checkScript);
 });
