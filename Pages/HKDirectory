@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoyo Knights Directory</title>
+</head>
+
+<body>
+
+    <h1>Hoyo Knights Directory</h1>
+
+    <h2>Executive Board</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Responsibilities</th>
+        </tr>
+
+        <tr>
+            <td>President</td>
+            <td>Mason Mitchell</td>
+            <td>Club leadership</td>
+        </tr>
+
+        <tr>
+            <td>Vice President</td>
+            <td>Justin Abraham</td>
+            <td>Assists with club operations</td>
+        </tr>
+
+        <tr>
+            <td>Secretary</td>
+            <td>Jayce Ambrocio</td>
+            <td>Documentation and meeting records</td>
+        </tr>
+
+        <tr>
+            <td>Treasurer</td>
+            <td>TBD</td>
+            <td>Club finances</td>
+        </tr>
+
+    </table>
+
+
+    <h2>Club Information</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Organization</th>
+            <td>Hoyo Knights UCF</td>
+        </tr>
+
+        <tr>
+            <th>University</th>
+            <td>University of Central Florida</td>
+        </tr>
+
+        <tr>
+            <th>Organization Type</th>
+            <td>Student-Run Gaming Organization</td>
+        </tr>
+
+        <tr>
+            <th>Primary Focus</th>
+            <td>HoYoverse Games</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
