@@ -146,12 +146,6 @@ form p {
    opacity: 0.5
 }
 
-
-
-footer.legal-disclaimer {
-font-size: 12px;
-  {
-  {
 table {
     border-collapse: collapse;
     margin: auto;
@@ -161,6 +155,12 @@ th, td {
     padding: 10px;
     border: 1px solid #5A2576;
 }
+
+footer.legal-disclaimer {
+font-size: 12px;
+  {
+  {
+
 
 
 
